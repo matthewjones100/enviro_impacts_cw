@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28e9530f3c9255bfac8e630c7c0b0f37 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_28e9530f3c9255bfac8e630c7c0b0f37" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28e9530f3c9255bfac8e630c7c0b0f37 = L.map(
+                "map_28e9530f3c9255bfac8e630c7c0b0f37",
+                {
+                    center: [51.1657, 10.4515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1befba34a7d00b0e504ff458f803ce43 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1befba34a7d00b0e504ff458f803ce43.addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+            var circle_marker_751fd025c7936b80fc68ce8b179186bc = L.circleMarker(
+                [51.505299, 0.055278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_74db1c836eb1dd96d1de6896d38e7a7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a53c6affe6c3baa1dc6c6fffdbd74ba7 = $(`<div id="html_a53c6affe6c3baa1dc6c6fffdbd74ba7" style="width: 100.0%; height: 100.0%;">London (EGLC): 9 flights</div>`)[0];
+                popup_74db1c836eb1dd96d1de6896d38e7a7f.setContent(html_a53c6affe6c3baa1dc6c6fffdbd74ba7);
+            
+        
+
+        circle_marker_751fd025c7936b80fc68ce8b179186bc.bindPopup(popup_74db1c836eb1dd96d1de6896d38e7a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_94e2ecded55a33f576ddfe0555f5cc2d = L.circleMarker(
+                [55.950145, -3.372288],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_4cb0b88bee1d254c941c6f3799d7a555 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73dcf551284574133c9395c7c246c9b4 = $(`<div id="html_73dcf551284574133c9395c7c246c9b4" style="width: 100.0%; height: 100.0%;">Edinburgh (EGPH): 9 flights</div>`)[0];
+                popup_4cb0b88bee1d254c941c6f3799d7a555.setContent(html_73dcf551284574133c9395c7c246c9b4);
+            
+        
+
+        circle_marker_94e2ecded55a33f576ddfe0555f5cc2d.bindPopup(popup_4cb0b88bee1d254c941c6f3799d7a555)
+        ;
+
+        
+    
+    
+            var circle_marker_8fe23c5cf2aeb347227c5bce975b1888 = L.circleMarker(
+                [55.871899, -4.43306],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_90665ae91e3e4a767c1ba811e3f75d47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6175441d00ddda03ca2d8ef1b5940acd = $(`<div id="html_6175441d00ddda03ca2d8ef1b5940acd" style="width: 100.0%; height: 100.0%;">Paisley, Renfrewshire (EGPF): 6 flights</div>`)[0];
+                popup_90665ae91e3e4a767c1ba811e3f75d47.setContent(html_6175441d00ddda03ca2d8ef1b5940acd);
+            
+        
+
+        circle_marker_8fe23c5cf2aeb347227c5bce975b1888.bindPopup(popup_90665ae91e3e4a767c1ba811e3f75d47)
+        ;
+
+        
+    
+    
+            var circle_marker_31154524d3dd0a4b36a74b6c446f4947 = L.circleMarker(
+                [54.618099, -5.8725],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_3fb6387d8d9499f146d015b64ec262fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91d8e8591be3268ac3a498222ca3c87 = $(`<div id="html_d91d8e8591be3268ac3a498222ca3c87" style="width: 100.0%; height: 100.0%;">Belfast (EGAC): 6 flights</div>`)[0];
+                popup_3fb6387d8d9499f146d015b64ec262fb.setContent(html_d91d8e8591be3268ac3a498222ca3c87);
+            
+        
+
+        circle_marker_31154524d3dd0a4b36a74b6c446f4947.bindPopup(popup_3fb6387d8d9499f146d015b64ec262fb)
+        ;
+
+        
+    
+    
+            var circle_marker_937211102c1ae41ef6906313603bc840 = L.circleMarker(
+                [57.2019, -2.19778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_8a1a6f5034dff6710fd140f0e1f38187 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b5d269168f506f216a42ee9464eb067 = $(`<div id="html_7b5d269168f506f216a42ee9464eb067" style="width: 100.0%; height: 100.0%;">Aberdeen (EGPD): 4 flights</div>`)[0];
+                popup_8a1a6f5034dff6710fd140f0e1f38187.setContent(html_7b5d269168f506f216a42ee9464eb067);
+            
+        
+
+        circle_marker_937211102c1ae41ef6906313603bc840.bindPopup(popup_8a1a6f5034dff6710fd140f0e1f38187)
+        ;
+
+        
+    
+    
+            var circle_marker_f9b884512955d21e90d88527f1fcdece = L.circleMarker(
+                [40.639447, -73.779317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_a954e8d599ad0bfb5ddc595e42dfcc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30ddb100f12a98c0254ed5dda3a88c98 = $(`<div id="html_30ddb100f12a98c0254ed5dda3a88c98" style="width: 100.0%; height: 100.0%;">New York (KJFK): 3 flights</div>`)[0];
+                popup_a954e8d599ad0bfb5ddc595e42dfcc61.setContent(html_30ddb100f12a98c0254ed5dda3a88c98);
+            
+        
+
+        circle_marker_f9b884512955d21e90d88527f1fcdece.bindPopup(popup_a954e8d599ad0bfb5ddc595e42dfcc61)
+        ;
+
+        
+    
+    
+            var circle_marker_df15c07fe008504ad4f611a610112061 = L.circleMarker(
+                [49.20790100097656, -2.195509910583496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_89a186887fd68509d8309b68c3500846 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_667c98387b21d00141b593ab25064974 = $(`<div id="html_667c98387b21d00141b593ab25064974" style="width: 100.0%; height: 100.0%;">Saint Helier (EGJJ): 3 flights</div>`)[0];
+                popup_89a186887fd68509d8309b68c3500846.setContent(html_667c98387b21d00141b593ab25064974);
+            
+        
+
+        circle_marker_df15c07fe008504ad4f611a610112061.bindPopup(popup_89a186887fd68509d8309b68c3500846)
+        ;
+
+        
+    
+    
+            var circle_marker_0f7f971ef5481c44b61edd17d13c6c1c = L.circleMarker(
+                [53.349375, -2.279521],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_aadc30eb46cca2cac032dfd7852f97e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9524fd39a885556a36eb66186004f437 = $(`<div id="html_9524fd39a885556a36eb66186004f437" style="width: 100.0%; height: 100.0%;">Manchester, Greater Manchester (EGCC): 3 flights</div>`)[0];
+                popup_aadc30eb46cca2cac032dfd7852f97e3.setContent(html_9524fd39a885556a36eb66186004f437);
+            
+        
+
+        circle_marker_0f7f971ef5481c44b61edd17d13c6c1c.bindPopup(popup_aadc30eb46cca2cac032dfd7852f97e3)
+        ;
+
+        
+    
+    
+            var circle_marker_acce63b61bdbdee957991f72804fc644 = L.circleMarker(
+                [53.428713, -6.262121],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_58caa57389eb9274370b1c4aeec1a056 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_753ac1cd5e1835775f9f19b14a1913ac = $(`<div id="html_753ac1cd5e1835775f9f19b14a1913ac" style="width: 100.0%; height: 100.0%;">Dublin (EIDW): 2 flights</div>`)[0];
+                popup_58caa57389eb9274370b1c4aeec1a056.setContent(html_753ac1cd5e1835775f9f19b14a1913ac);
+            
+        
+
+        circle_marker_acce63b61bdbdee957991f72804fc644.bindPopup(popup_58caa57389eb9274370b1c4aeec1a056)
+        ;
+
+        
+    
+    
+            var circle_marker_99aa77eb2194cc4f9a5f2b6b08d89211 = L.circleMarker(
+                [43.658401, 7.21587],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f283f3b819bdba9e19068d3bced8a510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34fec914da40a8a6546669ee13a39c05 = $(`<div id="html_34fec914da40a8a6546669ee13a39c05" style="width: 100.0%; height: 100.0%;">Nice, Alpes-Maritimes (LFMN): 2 flights</div>`)[0];
+                popup_f283f3b819bdba9e19068d3bced8a510.setContent(html_34fec914da40a8a6546669ee13a39c05);
+            
+        
+
+        circle_marker_99aa77eb2194cc4f9a5f2b6b08d89211.bindPopup(popup_f283f3b819bdba9e19068d3bced8a510)
+        ;
+
+        
+    
+    
+            var circle_marker_66761b233e8ed99776761bcbefdaad74 = L.circleMarker(
+                [45.445099, 9.27674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_ea0e698ad89e334df5e4fc96382d9b10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e26172ca0026fc3cfa2840e80c8ffe11 = $(`<div id="html_e26172ca0026fc3cfa2840e80c8ffe11" style="width: 100.0%; height: 100.0%;">Segrate (MI) (LIML): 2 flights</div>`)[0];
+                popup_ea0e698ad89e334df5e4fc96382d9b10.setContent(html_e26172ca0026fc3cfa2840e80c8ffe11);
+            
+        
+
+        circle_marker_66761b233e8ed99776761bcbefdaad74.bindPopup(popup_ea0e698ad89e334df5e4fc96382d9b10)
+        ;
+
+        
+    
+    
+            var circle_marker_67afed04f8549dd6fd00f52b978f327d = L.circleMarker(
+                [41.2971, 2.07846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_bdfee3ae8359c31a4c82df9189431989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64c49c72895091d37e2c373ba70274e5 = $(`<div id="html_64c49c72895091d37e2c373ba70274e5" style="width: 100.0%; height: 100.0%;">Barcelona (LEBL): 2 flights</div>`)[0];
+                popup_bdfee3ae8359c31a4c82df9189431989.setContent(html_64c49c72895091d37e2c373ba70274e5);
+            
+        
+
+        circle_marker_67afed04f8549dd6fd00f52b978f327d.bindPopup(popup_bdfee3ae8359c31a4c82df9189431989)
+        ;
+
+        
+    
+    
+            var circle_marker_d74ff26de20557dca99fd9e8fabd6859 = L.circleMarker(
+                [37.936401, 23.9445],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_27373c4d8cee819683c0b3c788eb9090 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a32a1a97f71e92f876a97547cd9cb3a = $(`<div id="html_2a32a1a97f71e92f876a97547cd9cb3a" style="width: 100.0%; height: 100.0%;">Spata-Artemida (LGAV): 2 flights</div>`)[0];
+                popup_27373c4d8cee819683c0b3c788eb9090.setContent(html_2a32a1a97f71e92f876a97547cd9cb3a);
+            
+        
+
+        circle_marker_d74ff26de20557dca99fd9e8fabd6859.bindPopup(popup_27373c4d8cee819683c0b3c788eb9090)
+        ;
+
+        
+    
+    
+            var circle_marker_118704ec60823629bf42004fa40d6350 = L.circleMarker(
+                [38.872898, 1.37312],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f36a2d54f435d306c7d7c2f6ebc46931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd272e47a6d3ca11e1fac8855647eb4e = $(`<div id="html_dd272e47a6d3ca11e1fac8855647eb4e" style="width: 100.0%; height: 100.0%;">Ibiza (Eivissa) (LEIB): 2 flights</div>`)[0];
+                popup_f36a2d54f435d306c7d7c2f6ebc46931.setContent(html_dd272e47a6d3ca11e1fac8855647eb4e);
+            
+        
+
+        circle_marker_118704ec60823629bf42004fa40d6350.bindPopup(popup_f36a2d54f435d306c7d7c2f6ebc46931)
+        ;
+
+        
+    
+    
+            var circle_marker_714def88f757c70a382e6211983d358b = L.circleMarker(
+                [55.037958, -1.689577],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_568d0e926cd2b8240e430ef1bc689e1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_220c531e0dd7c285ac34c11396b72bd4 = $(`<div id="html_220c531e0dd7c285ac34c11396b72bd4" style="width: 100.0%; height: 100.0%;">Newcastle upon Tyne, Tyne and Wear (EGNT): 2 flights</div>`)[0];
+                popup_568d0e926cd2b8240e430ef1bc689e1b.setContent(html_220c531e0dd7c285ac34c11396b72bd4);
+            
+        
+
+        circle_marker_714def88f757c70a382e6211983d358b.bindPopup(popup_568d0e926cd2b8240e430ef1bc689e1b)
+        ;
+
+        
+    
+    
+            var circle_marker_b2148ca8ed4a484494f83dc546208461 = L.circleMarker(
+                [34.875099, 33.624901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_8d1562e3a2d7303bd68e0576a4dcad39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c45c710fd1c4960c28a44ff6e4bd87f9 = $(`<div id="html_c45c710fd1c4960c28a44ff6e4bd87f9" style="width: 100.0%; height: 100.0%;">Larnaca (LCLK): 2 flights</div>`)[0];
+                popup_8d1562e3a2d7303bd68e0576a4dcad39.setContent(html_c45c710fd1c4960c28a44ff6e4bd87f9);
+            
+        
+
+        circle_marker_b2148ca8ed4a484494f83dc546208461.bindPopup(popup_8d1562e3a2d7303bd68e0576a4dcad39)
+        ;
+
+        
+    
+    
+            var circle_marker_fe52fe3612268c1b7958dedc54563178 = L.circleMarker(
+                [33.6367, -84.428101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_d4babf9f17311a53bc589519d3f4e141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3df68958fa5389489693800c75db30c = $(`<div id="html_b3df68958fa5389489693800c75db30c" style="width: 100.0%; height: 100.0%;">Atlanta (KATL): 2 flights</div>`)[0];
+                popup_d4babf9f17311a53bc589519d3f4e141.setContent(html_b3df68958fa5389489693800c75db30c);
+            
+        
+
+        circle_marker_fe52fe3612268c1b7958dedc54563178.bindPopup(popup_d4babf9f17311a53bc589519d3f4e141)
+        ;
+
+        
+    
+    
+            var circle_marker_afe89c026b1406557de91949ea9c7a53 = L.circleMarker(
+                [41.9786, -87.9048],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_8a3e36021dff6cc5e49a5d171fb032c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_035b566ef7f847c6bf6429d9976cc377 = $(`<div id="html_035b566ef7f847c6bf6429d9976cc377" style="width: 100.0%; height: 100.0%;">Chicago (KORD): 2 flights</div>`)[0];
+                popup_8a3e36021dff6cc5e49a5d171fb032c8.setContent(html_035b566ef7f847c6bf6429d9976cc377);
+            
+        
+
+        circle_marker_afe89c026b1406557de91949ea9c7a53.bindPopup(popup_8a3e36021dff6cc5e49a5d171fb032c8)
+        ;
+
+        
+    
+    
+            var circle_marker_baf96b5627c6ded48b7aeea9eaedb38d = L.circleMarker(
+                [36.151199, -5.34966],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_b1567aeaa97de3041d7dab6ab2444b40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a84502e5e55664c2f702689353799d68 = $(`<div id="html_a84502e5e55664c2f702689353799d68" style="width: 100.0%; height: 100.0%;">Gibraltar (LXGB): 2 flights</div>`)[0];
+                popup_b1567aeaa97de3041d7dab6ab2444b40.setContent(html_a84502e5e55664c2f702689353799d68);
+            
+        
+
+        circle_marker_baf96b5627c6ded48b7aeea9eaedb38d.bindPopup(popup_b1567aeaa97de3041d7dab6ab2444b40)
+        ;
+
+        
+    
+    
+            var circle_marker_1eb22cbe5fe5ce429ea1a23978b75a80 = L.circleMarker(
+                [37.0144004822, -7.96590995789],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_d00d7913afcb57181b242b3400096a1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eda4f4a53b90f2b20a1ccf386459553 = $(`<div id="html_4eda4f4a53b90f2b20a1ccf386459553" style="width: 100.0%; height: 100.0%;">Faro (LPFR): 2 flights</div>`)[0];
+                popup_d00d7913afcb57181b242b3400096a1c.setContent(html_4eda4f4a53b90f2b20a1ccf386459553);
+            
+        
+
+        circle_marker_1eb22cbe5fe5ce429ea1a23978b75a80.bindPopup(popup_d00d7913afcb57181b242b3400096a1c)
+        ;
+
+        
+    
+    
+            var circle_marker_4f901f6898fa7a9ba34ac6d50e53498e = L.circleMarker(
+                [39.551701, 2.73881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_76627834d07ce5371e5f1c6e96025fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02ee56e070dded1730cbabcb74f75897 = $(`<div id="html_02ee56e070dded1730cbabcb74f75897" style="width: 100.0%; height: 100.0%;">Palma de Mallorca (LEPA): 2 flights</div>`)[0];
+                popup_76627834d07ce5371e5f1c6e96025fa1.setContent(html_02ee56e070dded1730cbabcb74f75897);
+            
+        
+
+        circle_marker_4f901f6898fa7a9ba34ac6d50e53498e.bindPopup(popup_76627834d07ce5371e5f1c6e96025fa1)
+        ;
+
+        
+    
+    
+            var circle_marker_11e3c8804ac400e1c63428d39cd6487d = L.circleMarker(
+                [50.030241, 8.561096],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f55484ca302c5845739698bdd8f81aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a022d098648f61782b6b82123c878986 = $(`<div id="html_a022d098648f61782b6b82123c878986" style="width: 100.0%; height: 100.0%;">Frankfurt am Main (EDDF): 2 flights</div>`)[0];
+                popup_f55484ca302c5845739698bdd8f81aa5.setContent(html_a022d098648f61782b6b82123c878986);
+            
+        
+
+        circle_marker_11e3c8804ac400e1c63428d39cd6487d.bindPopup(popup_f55484ca302c5845739698bdd8f81aa5)
+        ;
+
+        
+    
+    
+            var circle_marker_c6635e81faa03188db79b8c9c1d96f6d = L.circleMarker(
+                [39.601898, 19.911699],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_0cc8f54815c77c209c42f528c9498cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42131cb300a20fed14fb1cd07a121f93 = $(`<div id="html_42131cb300a20fed14fb1cd07a121f93" style="width: 100.0%; height: 100.0%;">Kerkyra (Corfu) (LGKR): 1 flights</div>`)[0];
+                popup_0cc8f54815c77c209c42f528c9498cf4.setContent(html_42131cb300a20fed14fb1cd07a121f93);
+            
+        
+
+        circle_marker_c6635e81faa03188db79b8c9c1d96f6d.bindPopup(popup_0cc8f54815c77c209c42f528c9498cf4)
+        ;
+
+        
+    
+    
+            var circle_marker_840bae3567188ef340dba08a9dfb5746 = L.circleMarker(
+                [35.857498, 14.4775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_774906b85763c58eba7a276505b2a72e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41dfc40206353389abc546296f6dfad4 = $(`<div id="html_41dfc40206353389abc546296f6dfad4" style="width: 100.0%; height: 100.0%;">Valletta (LMML): 1 flights</div>`)[0];
+                popup_774906b85763c58eba7a276505b2a72e.setContent(html_41dfc40206353389abc546296f6dfad4);
+            
+        
+
+        circle_marker_840bae3567188ef340dba08a9dfb5746.bindPopup(popup_774906b85763c58eba7a276505b2a72e)
+        ;
+
+        
+    
+    
+            var circle_marker_808e360398a1a1fdbdaedb6851c86e14 = L.circleMarker(
+                [55.617900848389, 12.656000137329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_477d80c2c10ba518435645ad3b983c56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02d9f6bfcd0204b1e2a99cf695fcea42 = $(`<div id="html_02d9f6bfcd0204b1e2a99cf695fcea42" style="width: 100.0%; height: 100.0%;">Copenhagen (EKCH): 1 flights</div>`)[0];
+                popup_477d80c2c10ba518435645ad3b983c56.setContent(html_02d9f6bfcd0204b1e2a99cf695fcea42);
+            
+        
+
+        circle_marker_808e360398a1a1fdbdaedb6851c86e14.bindPopup(popup_477d80c2c10ba518435645ad3b983c56)
+        ;
+
+        
+    
+    
+            var circle_marker_f6697d9771c3ecc5c69d6bfe9aa24b28 = L.circleMarker(
+                [9.00679, 7.26317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_bb0007f11ddd43e78d9f151f57b7a9e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb8ab01a163ec44c867e5bc5f9618555 = $(`<div id="html_eb8ab01a163ec44c867e5bc5f9618555" style="width: 100.0%; height: 100.0%;">Abuja (DNAA): 1 flights</div>`)[0];
+                popup_bb0007f11ddd43e78d9f151f57b7a9e8.setContent(html_eb8ab01a163ec44c867e5bc5f9618555);
+            
+        
+
+        circle_marker_f6697d9771c3ecc5c69d6bfe9aa24b28.bindPopup(popup_bb0007f11ddd43e78d9f151f57b7a9e8)
+        ;
+
+        
+    
+    
+            var circle_marker_47085782999a86c7cf76ed536c986606 = L.circleMarker(
+                [52.308601, 4.76389],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_5e99c419ed4b627521a61eab4aca2a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7708566adf935be21b9293095ed6c1 = $(`<div id="html_0f7708566adf935be21b9293095ed6c1" style="width: 100.0%; height: 100.0%;">Amsterdam (EHAM): 1 flights</div>`)[0];
+                popup_5e99c419ed4b627521a61eab4aca2a10.setContent(html_0f7708566adf935be21b9293095ed6c1);
+            
+        
+
+        circle_marker_47085782999a86c7cf76ed536c986606.bindPopup(popup_5e99c419ed4b627521a61eab4aca2a10)
+        ;
+
+        
+    
+    
+            var circle_marker_c37f522be0131baeb76dfb0e22309e46 = L.circleMarker(
+                [52.362247, 13.500672],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_c3ea9a7ed05b31cbe190b8025a844f0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_388a8a81dcea86d11ad56ab0bb2c7156 = $(`<div id="html_388a8a81dcea86d11ad56ab0bb2c7156" style="width: 100.0%; height: 100.0%;">Berlin (EDDB): 1 flights</div>`)[0];
+                popup_c3ea9a7ed05b31cbe190b8025a844f0a.setContent(html_388a8a81dcea86d11ad56ab0bb2c7156);
+            
+        
+
+        circle_marker_c37f522be0131baeb76dfb0e22309e46.bindPopup(popup_c3ea9a7ed05b31cbe190b8025a844f0a)
+        ;
+
+        
+    
+    
+            var circle_marker_69ca70d202ebbcd5df7d1104b2f83d5e = L.circleMarker(
+                [17.935699462890625, -76.7874984741211],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_24e07afa02ed8ce7da71ede93bb5ff7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fc6d4c27d8a7cf3023114b03d3fff68 = $(`<div id="html_2fc6d4c27d8a7cf3023114b03d3fff68" style="width: 100.0%; height: 100.0%;">Kingston (MKJP): 1 flights</div>`)[0];
+                popup_24e07afa02ed8ce7da71ede93bb5ff7a.setContent(html_2fc6d4c27d8a7cf3023114b03d3fff68);
+            
+        
+
+        circle_marker_69ca70d202ebbcd5df7d1104b2f83d5e.bindPopup(popup_24e07afa02ed8ce7da71ede93bb5ff7a)
+        ;
+
+        
+    
+    
+            var circle_marker_7bee477dbf12264eaceeea8477ec9ef7 = L.circleMarker(
+                [50.440601, -4.99541],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_6e1c6aa85bb0c05b6f0cfcee36a2f298 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c4b8d8c81df919c6d311db5cdf3a5cd = $(`<div id="html_2c4b8d8c81df919c6d311db5cdf3a5cd" style="width: 100.0%; height: 100.0%;">Newquay (EGHQ): 1 flights</div>`)[0];
+                popup_6e1c6aa85bb0c05b6f0cfcee36a2f298.setContent(html_2c4b8d8c81df919c6d311db5cdf3a5cd);
+            
+        
+
+        circle_marker_7bee477dbf12264eaceeea8477ec9ef7.bindPopup(popup_6e1c6aa85bb0c05b6f0cfcee36a2f298)
+        ;
+
+        
+    
+    
+            var circle_marker_15fdb25f347e245672f90f9c57646322 = L.circleMarker(
+                [46.238098, 6.10895],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_4504f9bf120396646451e76a4e77e0ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3b75b181e8a236b280632fcf939c4c8 = $(`<div id="html_f3b75b181e8a236b280632fcf939c4c8" style="width: 100.0%; height: 100.0%;">Geneva (LSGG): 1 flights</div>`)[0];
+                popup_4504f9bf120396646451e76a4e77e0ba.setContent(html_f3b75b181e8a236b280632fcf939c4c8);
+            
+        
+
+        circle_marker_15fdb25f347e245672f90f9c57646322.bindPopup(popup_4504f9bf120396646451e76a4e77e0ba)
+        ;
+
+        
+    
+    
+            var circle_marker_f3e4e801aad2740ed1157e6548727bd5 = L.circleMarker(
+                [32.011398, 34.8867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_4df78e18c0a7164560e9dc3984b2411c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d383b598c904e357d65eb13806a520c2 = $(`<div id="html_d383b598c904e357d65eb13806a520c2" style="width: 100.0%; height: 100.0%;">Tel Aviv (LLBG): 1 flights</div>`)[0];
+                popup_4df78e18c0a7164560e9dc3984b2411c.setContent(html_d383b598c904e357d65eb13806a520c2);
+            
+        
+
+        circle_marker_f3e4e801aad2740ed1157e6548727bd5.bindPopup(popup_4df78e18c0a7164560e9dc3984b2411c)
+        ;
+
+        
+    
+    
+            var circle_marker_ce2361c139e53d8cc1ca3c4577f184cd = L.circleMarker(
+                [57.54249954223633, -4.047500133514404],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_13f5dbcba20956ce04ef7575044ddc0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00089f37748c7681a646ba7caed927ff = $(`<div id="html_00089f37748c7681a646ba7caed927ff" style="width: 100.0%; height: 100.0%;">Inverness (EGPE): 1 flights</div>`)[0];
+                popup_13f5dbcba20956ce04ef7575044ddc0e.setContent(html_00089f37748c7681a646ba7caed927ff);
+            
+        
+
+        circle_marker_ce2361c139e53d8cc1ca3c4577f184cd.bindPopup(popup_13f5dbcba20956ce04ef7575044ddc0e)
+        ;
+
+        
+    
+    
+            var circle_marker_5e92c1416ae8149fe3e51a785444de69 = L.circleMarker(
+                [36.6749, -4.49911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_e5209322be1f5a22dd422822bfdc0e14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_046144381d2fc45303f86822c368c9d9 = $(`<div id="html_046144381d2fc45303f86822c368c9d9" style="width: 100.0%; height: 100.0%;">Málaga (LEMG): 1 flights</div>`)[0];
+                popup_e5209322be1f5a22dd422822bfdc0e14.setContent(html_046144381d2fc45303f86822c368c9d9);
+            
+        
+
+        circle_marker_5e92c1416ae8149fe3e51a785444de69.bindPopup(popup_e5209322be1f5a22dd422822bfdc0e14)
+        ;
+
+        
+    
+    
+            var circle_marker_68c537747dbe020504b4c047a8ac2244 = L.circleMarker(
+                [42.562247, 18.265543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_012b47447383fbf8c5ad553280e31702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6962e87e55ef8e7960c8f872c4889415 = $(`<div id="html_6962e87e55ef8e7960c8f872c4889415" style="width: 100.0%; height: 100.0%;">Čilipi (LDDU): 1 flights</div>`)[0];
+                popup_012b47447383fbf8c5ad553280e31702.setContent(html_6962e87e55ef8e7960c8f872c4889415);
+            
+        
+
+        circle_marker_68c537747dbe020504b4c047a8ac2244.bindPopup(popup_012b47447383fbf8c5ad553280e31702)
+        ;
+
+        
+    
+    
+            var circle_marker_b8621faf197d3bfa7f3c6b9c2ce3fdef = L.circleMarker(
+                [32.697899, -16.7745],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_c89ec9758092a6006e43024be07eaeab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_903fa9ec9384cc9987cbbe992061d9f0 = $(`<div id="html_903fa9ec9384cc9987cbbe992061d9f0" style="width: 100.0%; height: 100.0%;">Funchal (LPMA): 1 flights</div>`)[0];
+                popup_c89ec9758092a6006e43024be07eaeab.setContent(html_903fa9ec9384cc9987cbbe992061d9f0);
+            
+        
+
+        circle_marker_b8621faf197d3bfa7f3c6b9c2ce3fdef.bindPopup(popup_c89ec9758092a6006e43024be07eaeab)
+        ;
+
+        
+    
+    
+            var circle_marker_c85aeb5b64bdc9daff4785d0238cd8fa = L.circleMarker(
+                [-33.9648017883, 18.6016998291],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_1e84dcbf66381425609e8e4114e9cc29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33a2a2c1bb0fe857c6591d6faaeda68d = $(`<div id="html_33a2a2c1bb0fe857c6591d6faaeda68d" style="width: 100.0%; height: 100.0%;">Cape Town (FACT): 1 flights</div>`)[0];
+                popup_1e84dcbf66381425609e8e4114e9cc29.setContent(html_33a2a2c1bb0fe857c6591d6faaeda68d);
+            
+        
+
+        circle_marker_c85aeb5b64bdc9daff4785d0238cd8fa.bindPopup(popup_1e84dcbf66381425609e8e4114e9cc29)
+        ;
+
+        
+    
+    
+            var circle_marker_b110fdb29ce24d0512f25d2152dc41dc = L.circleMarker(
+                [51.289501, 6.76678],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_318d28925e56a01a98d0c9e990770596 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31870231b7fc78e6e3e41b2b10f1e5a0 = $(`<div id="html_31870231b7fc78e6e3e41b2b10f1e5a0" style="width: 100.0%; height: 100.0%;">Düsseldorf (EDDL): 1 flights</div>`)[0];
+                popup_318d28925e56a01a98d0c9e990770596.setContent(html_31870231b7fc78e6e3e41b2b10f1e5a0);
+            
+        
+
+        circle_marker_b110fdb29ce24d0512f25d2152dc41dc.bindPopup(popup_318d28925e56a01a98d0c9e990770596)
+        ;
+
+        
+    
+    
+            var circle_marker_a8d6db90e59086ae73ca0cf48b185075 = L.circleMarker(
+                [19.0886993408, 72.8678970337],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_4b8896403c0759b764529d9c2328b659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aab55780dd3ec77225f38f257db0640f = $(`<div id="html_aab55780dd3ec77225f38f257db0640f" style="width: 100.0%; height: 100.0%;">Mumbai (VABB): 1 flights</div>`)[0];
+                popup_4b8896403c0759b764529d9c2328b659.setContent(html_aab55780dd3ec77225f38f257db0640f);
+            
+        
+
+        circle_marker_a8d6db90e59086ae73ca0cf48b185075.bindPopup(popup_4b8896403c0759b764529d9c2328b659)
+        ;
+
+        
+    
+    
+            var circle_marker_53bd690a0e5974a3ef04fbb79e2e7879 = L.circleMarker(
+                [24.9576, 46.698799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_b361434e3fc98a6cb425bc94f86b4977 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ed35963344144f7c0af5de21bf78693 = $(`<div id="html_2ed35963344144f7c0af5de21bf78693" style="width: 100.0%; height: 100.0%;">Riyadh (OERK): 1 flights</div>`)[0];
+                popup_b361434e3fc98a6cb425bc94f86b4977.setContent(html_2ed35963344144f7c0af5de21bf78693);
+            
+        
+
+        circle_marker_53bd690a0e5974a3ef04fbb79e2e7879.bindPopup(popup_b361434e3fc98a6cb425bc94f86b4977)
+        ;
+
+        
+    
+    
+            var circle_marker_ebcd1d495181c84bb705275eff9a4cf2 = L.circleMarker(
+                [13.0746, -59.4925],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_dc8de572dfef44a822ce4de2c4f73afe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b8d1b8fbffac54f1c99568d4667fefa = $(`<div id="html_1b8d1b8fbffac54f1c99568d4667fefa" style="width: 100.0%; height: 100.0%;">Bridgetown (TBPB): 1 flights</div>`)[0];
+                popup_dc8de572dfef44a822ce4de2c4f73afe.setContent(html_1b8d1b8fbffac54f1c99568d4667fefa);
+            
+        
+
+        circle_marker_ebcd1d495181c84bb705275eff9a4cf2.bindPopup(popup_dc8de572dfef44a822ce4de2c4f73afe)
+        ;
+
+        
+    
+    
+            var circle_marker_8f993d8b3badc0ce105a9329b706fa1b = L.circleMarker(
+                [6.5773701667785645, 3.321160078048706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_2fc1128f71dba15e7c84169eb1ffa4bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc8597637f92eeaf04bbbb2989f470f4 = $(`<div id="html_dc8597637f92eeaf04bbbb2989f470f4" style="width: 100.0%; height: 100.0%;">Lagos (DNMM): 1 flights</div>`)[0];
+                popup_2fc1128f71dba15e7c84169eb1ffa4bf.setContent(html_dc8597637f92eeaf04bbbb2989f470f4);
+            
+        
+
+        circle_marker_8f993d8b3badc0ce105a9329b706fa1b.bindPopup(popup_2fc1128f71dba15e7c84169eb1ffa4bf)
+        ;
+
+        
+    
+    
+            var circle_marker_ad2741ccf1c1128d1efe85df737958bb = L.circleMarker(
+                [48.353802, 11.7861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_72de9e7dddf182c002f313563ef5bc6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92cedef2d798eca8fc0f52846336dfa4 = $(`<div id="html_92cedef2d798eca8fc0f52846336dfa4" style="width: 100.0%; height: 100.0%;">Munich (EDDM): 1 flights</div>`)[0];
+                popup_72de9e7dddf182c002f313563ef5bc6b.setContent(html_92cedef2d798eca8fc0f52846336dfa4);
+            
+        
+
+        circle_marker_ad2741ccf1c1128d1efe85df737958bb.bindPopup(popup_72de9e7dddf182c002f313563ef5bc6b)
+        ;
+
+        
+    
+    
+            var circle_marker_dee3136bcb4b9f562d4b143421f8c634 = L.circleMarker(
+                [40.471926, -3.56264],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_18295d796e7eb93f90fe8c23faa5fc8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f29b8012483a7820e2b7453e0ba7a3b = $(`<div id="html_7f29b8012483a7820e2b7453e0ba7a3b" style="width: 100.0%; height: 100.0%;">Madrid (LEMD): 1 flights</div>`)[0];
+                popup_18295d796e7eb93f90fe8c23faa5fc8c.setContent(html_7f29b8012483a7820e2b7453e0ba7a3b);
+            
+        
+
+        circle_marker_dee3136bcb4b9f562d4b143421f8c634.bindPopup(popup_18295d796e7eb93f90fe8c23faa5fc8c)
+        ;
+
+        
+    
+    
+            var circle_marker_596f4afe92bcc657d9349f23a4d9249c = L.circleMarker(
+                [52.6758, 1.28278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_729c401c8964e91ce9dd7d61011c4170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_547f773bb1b951f1dc8c9d6d808eb6b0 = $(`<div id="html_547f773bb1b951f1dc8c9d6d808eb6b0" style="width: 100.0%; height: 100.0%;">Norwich, Norfolk (EGSH): 1 flights</div>`)[0];
+                popup_729c401c8964e91ce9dd7d61011c4170.setContent(html_547f773bb1b951f1dc8c9d6d808eb6b0);
+            
+        
+
+        circle_marker_596f4afe92bcc657d9349f23a4d9249c.bindPopup(popup_729c401c8964e91ce9dd7d61011c4170)
+        ;
+
+        
+    
+    
+            var circle_marker_8b76c906338bef3634a46c3f2bf952d9 = L.circleMarker(
+                [37.435101, 25.348101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_3f47726918a719e7b68210a28d26e3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_495e5bcd6781646f57dd7ff52f171d4c = $(`<div id="html_495e5bcd6781646f57dd7ff52f171d4c" style="width: 100.0%; height: 100.0%;">Mykonos (LGMK): 1 flights</div>`)[0];
+                popup_3f47726918a719e7b68210a28d26e3bb.setContent(html_495e5bcd6781646f57dd7ff52f171d4c);
+            
+        
+
+        circle_marker_8b76c906338bef3634a46c3f2bf952d9.bindPopup(popup_3f47726918a719e7b68210a28d26e3bb)
+        ;
+
+        
+    
+    
+            var circle_marker_1f4cf4a7b81fbcfe933637308ceffcbe = L.circleMarker(
+                [25.79319953918457, -80.29060363769531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_84f995c79ad4ce51ba0bcfd341a444ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2ab172ed1c1f646bddeba632bc7afb5 = $(`<div id="html_d2ab172ed1c1f646bddeba632bc7afb5" style="width: 100.0%; height: 100.0%;">Miami (KMIA): 1 flights</div>`)[0];
+                popup_84f995c79ad4ce51ba0bcfd341a444ef.setContent(html_d2ab172ed1c1f646bddeba632bc7afb5);
+            
+        
+
+        circle_marker_1f4cf4a7b81fbcfe933637308ceffcbe.bindPopup(popup_84f995c79ad4ce51ba0bcfd341a444ef)
+        ;
+
+        
+    
+    
+            var circle_marker_0512e4f2fa12727765c27f42dca19a81 = L.circleMarker(
+                [47.447943, -122.310276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_13da4b32e04dfb9db0895dab2eb7ad4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef586810531b6be5d633fb26dd662b9c = $(`<div id="html_ef586810531b6be5d633fb26dd662b9c" style="width: 100.0%; height: 100.0%;">Seattle (KSEA): 1 flights</div>`)[0];
+                popup_13da4b32e04dfb9db0895dab2eb7ad4c.setContent(html_ef586810531b6be5d633fb26dd662b9c);
+            
+        
+
+        circle_marker_0512e4f2fa12727765c27f42dca19a81.bindPopup(popup_13da4b32e04dfb9db0895dab2eb7ad4c)
+        ;
+
+        
+    
+    
+            var circle_marker_c9a2c6cd332177ecb3fa41fc87d45485 = L.circleMarker(
+                [13.1979, 77.706299],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_be115fa8d66891ed44801d3429b38cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_201b3112867db2f7e677a36cf9bb63e8 = $(`<div id="html_201b3112867db2f7e677a36cf9bb63e8" style="width: 100.0%; height: 100.0%;">Bangalore (VOBL): 1 flights</div>`)[0];
+                popup_be115fa8d66891ed44801d3429b38cc6.setContent(html_201b3112867db2f7e677a36cf9bb63e8);
+            
+        
+
+        circle_marker_c9a2c6cd332177ecb3fa41fc87d45485.bindPopup(popup_be115fa8d66891ed44801d3429b38cc6)
+        ;
+
+        
+    
+    
+            var circle_marker_dd026cdddbd62bea586f1767cee4fb88 = L.circleMarker(
+                [32.896801, -97.038002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_54b35cb2b2f31fb62be2c826f990f39a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a93cf2e16748d3fc200d20535745f92 = $(`<div id="html_2a93cf2e16748d3fc200d20535745f92" style="width: 100.0%; height: 100.0%;">Dallas-Fort Worth (KDFW): 1 flights</div>`)[0];
+                popup_54b35cb2b2f31fb62be2c826f990f39a.setContent(html_2a93cf2e16748d3fc200d20535745f92);
+            
+        
+
+        circle_marker_dd026cdddbd62bea586f1767cee4fb88.bindPopup(popup_54b35cb2b2f31fb62be2c826f990f39a)
+        ;
+
+        
+    
+    
+            var circle_marker_92c7c28ec91b19c46efe0e30407b33c8 = L.circleMarker(
+                [42.36197, -71.0079],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_5e74e659853b0e0a902c03d8cbf6e74b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_013a8f390ac594b1f295eaa43ed063b1 = $(`<div id="html_013a8f390ac594b1f295eaa43ed063b1" style="width: 100.0%; height: 100.0%;">Boston (KBOS): 1 flights</div>`)[0];
+                popup_5e74e659853b0e0a902c03d8cbf6e74b.setContent(html_013a8f390ac594b1f295eaa43ed063b1);
+            
+        
+
+        circle_marker_92c7c28ec91b19c46efe0e30407b33c8.bindPopup(popup_5e74e659853b0e0a902c03d8cbf6e74b)
+        ;
+
+        
+    
+    
+            var circle_marker_80d9de1f5024a353ed946df9353478c1 = L.circleMarker(
+                [43.6772, -79.6306],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_1316b9d88706f4873647b162ef06aa61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b8caa475c3679de3563fdd35bda9bd9 = $(`<div id="html_3b8caa475c3679de3563fdd35bda9bd9" style="width: 100.0%; height: 100.0%;">Toronto (CYYZ): 1 flights</div>`)[0];
+                popup_1316b9d88706f4873647b162ef06aa61.setContent(html_3b8caa475c3679de3563fdd35bda9bd9);
+            
+        
+
+        circle_marker_80d9de1f5024a353ed946df9353478c1.bindPopup(popup_1316b9d88706f4873647b162ef06aa61)
+        ;
+
+        
+    
+    
+            var circle_marker_58480d9a930e450afb95592074579b6c = L.circleMarker(
+                [37.619806, -122.374821],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_0c15a5430e3985fd40b5cdaad5d76ad5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ca837fc2144299bf57402146fde9a9f = $(`<div id="html_6ca837fc2144299bf57402146fde9a9f" style="width: 100.0%; height: 100.0%;">San Francisco (KSFO): 1 flights</div>`)[0];
+                popup_0c15a5430e3985fd40b5cdaad5d76ad5.setContent(html_6ca837fc2144299bf57402146fde9a9f);
+            
+        
+
+        circle_marker_58480d9a930e450afb95592074579b6c.bindPopup(popup_0c15a5430e3985fd40b5cdaad5d76ad5)
+        ;
+
+        
+    
+    
+            var circle_marker_2b47f82652a8956860c7bd67e53ef73e = L.circleMarker(
+                [38.9445, -77.455803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_32431dacac937d9a17726e96e648adcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16ff3a3994dd3b3e8575ac6e20c3c138 = $(`<div id="html_16ff3a3994dd3b3e8575ac6e20c3c138" style="width: 100.0%; height: 100.0%;">Dulles (KIAD): 1 flights</div>`)[0];
+                popup_32431dacac937d9a17726e96e648adcf.setContent(html_16ff3a3994dd3b3e8575ac6e20c3c138);
+            
+        
+
+        circle_marker_2b47f82652a8956860c7bd67e53ef73e.bindPopup(popup_32431dacac937d9a17726e96e648adcf)
+        ;
+
+        
+    
+    
+            var circle_marker_38e9668532e53a88dc6bd9a87e016ed2 = L.circleMarker(
+                [-23.431944, -46.467778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_10736c846ada40374507473889c3702d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cb5a80b68846a8d5219593d9768728f = $(`<div id="html_9cb5a80b68846a8d5219593d9768728f" style="width: 100.0%; height: 100.0%;">São Paulo (SBGR): 1 flights</div>`)[0];
+                popup_10736c846ada40374507473889c3702d.setContent(html_9cb5a80b68846a8d5219593d9768728f);
+            
+        
+
+        circle_marker_38e9668532e53a88dc6bd9a87e016ed2.bindPopup(popup_10736c846ada40374507473889c3702d)
+        ;
+
+        
+    
+    
+            var circle_marker_3eafe5e1416e659cbea7d48978fbc17f = L.circleMarker(
+                [35.552299, 139.779999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_79edde106e63195f593ac19580ea9a91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c30278dbf97aa8fb5a4beabacf24f49d = $(`<div id="html_c30278dbf97aa8fb5a4beabacf24f49d" style="width: 100.0%; height: 100.0%;">Tokyo (RJTT): 1 flights</div>`)[0];
+                popup_79edde106e63195f593ac19580ea9a91.setContent(html_c30278dbf97aa8fb5a4beabacf24f49d);
+            
+        
+
+        circle_marker_3eafe5e1416e659cbea7d48978fbc17f.bindPopup(popup_79edde106e63195f593ac19580ea9a91)
+        ;
+
+        
+    
+    
+            var circle_marker_6471535c3304beb24a7f26287548e833 = L.circleMarker(
+                [19.435137, -99.071328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_25468565d21844607e6aa5567db5506a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ca26dc0e749ec14ecf27471d7b0c543 = $(`<div id="html_2ca26dc0e749ec14ecf27471d7b0c543" style="width: 100.0%; height: 100.0%;">Ciudad de México (MMMX): 1 flights</div>`)[0];
+                popup_25468565d21844607e6aa5567db5506a.setContent(html_2ca26dc0e749ec14ecf27471d7b0c543);
+            
+        
+
+        circle_marker_6471535c3304beb24a7f26287548e833.bindPopup(popup_25468565d21844607e6aa5567db5506a)
+        ;
+
+        
+    
+    
+            var circle_marker_aa1ead9488255fa1448e6e10b730552d = L.circleMarker(
+                [28.55563, 77.09519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_3597218162e12657eb0358e5a8985223 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2e5c3fb68deaf80ac3ff08591434bc9 = $(`<div id="html_a2e5c3fb68deaf80ac3ff08591434bc9" style="width: 100.0%; height: 100.0%;">New Delhi (VIDP): 1 flights</div>`)[0];
+                popup_3597218162e12657eb0358e5a8985223.setContent(html_a2e5c3fb68deaf80ac3ff08591434bc9);
+            
+        
+
+        circle_marker_aa1ead9488255fa1448e6e10b730552d.bindPopup(popup_3597218162e12657eb0358e5a8985223)
+        ;
+
+        
+    
+    
+            var circle_marker_20191c692776cc564cb2d1eba6b8f143 = L.circleMarker(
+                [33.942501, -118.407997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_bdf07ecfcfb4ee6fda31709abbd59648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f39233e92ae64425c118960a3b9199c6 = $(`<div id="html_f39233e92ae64425c118960a3b9199c6" style="width: 100.0%; height: 100.0%;">Los Angeles (KLAX): 1 flights</div>`)[0];
+                popup_bdf07ecfcfb4ee6fda31709abbd59648.setContent(html_f39233e92ae64425c118960a3b9199c6);
+            
+        
+
+        circle_marker_20191c692776cc564cb2d1eba6b8f143.bindPopup(popup_bdf07ecfcfb4ee6fda31709abbd59648)
+        ;
+
+        
+    
+    
+            var circle_marker_92bce3e2ee06aa2b25dcf4b993b83ef5 = L.circleMarker(
+                [59.64849, 17.928829],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f6be3d7a0b65504af06ca9a87b191507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a319de0a9d9d06943eaeaf8a532b4ef3 = $(`<div id="html_a319de0a9d9d06943eaeaf8a532b4ef3" style="width: 100.0%; height: 100.0%;">Stockholm (ESSA): 1 flights</div>`)[0];
+                popup_f6be3d7a0b65504af06ca9a87b191507.setContent(html_a319de0a9d9d06943eaeaf8a532b4ef3);
+            
+        
+
+        circle_marker_92bce3e2ee06aa2b25dcf4b993b83ef5.bindPopup(popup_f6be3d7a0b65504af06ca9a87b191507)
+        ;
+
+        
+    
+    
+            var circle_marker_06d86fa1986f0c5173c9f6788ce79103 = L.circleMarker(
+                [53.865898, -1.66057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f3b0bb3c888854d4cad2a365d3c63c4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_719c8665d82d677718aaf969f3864f43 = $(`<div id="html_719c8665d82d677718aaf969f3864f43" style="width: 100.0%; height: 100.0%;">Leeds, West Yorkshire (EGNM): 1 flights</div>`)[0];
+                popup_f3b0bb3c888854d4cad2a365d3c63c4b.setContent(html_719c8665d82d677718aaf969f3864f43);
+            
+        
+
+        circle_marker_06d86fa1986f0c5173c9f6788ce79103.bindPopup(popup_f3b0bb3c888854d4cad2a365d3c63c4b)
+        ;
+
+        
+    
+    
+            var circle_marker_bc6371b92f8a010e34cc0823eca5445b = L.circleMarker(
+                [51.148771, -0.192089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_acd94fc64f553757fd2278d7a3f7d7c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75476c88d841723321f402c3c11a4508 = $(`<div id="html_75476c88d841723321f402c3c11a4508" style="width: 100.0%; height: 100.0%;">Gatwick, Surrey (EGKK): 1 flights</div>`)[0];
+                popup_acd94fc64f553757fd2278d7a3f7d7c4.setContent(html_75476c88d841723321f402c3c11a4508);
+            
+        
+
+        circle_marker_bc6371b92f8a010e34cc0823eca5445b.bindPopup(popup_acd94fc64f553757fd2278d7a3f7d7c4)
+        ;
+
+        
+    
+    
+            var circle_marker_75936f12451327992240e78b8a5c5e9c = L.circleMarker(
+                [-33.984901, 25.6173],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_f24a28d1495c9f366c3c3f5fcb83eb94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46aa1444dc90863b09a81f361e4bfbe6 = $(`<div id="html_46aa1444dc90863b09a81f361e4bfbe6" style="width: 100.0%; height: 100.0%;">Gqeberha (Port Elizabeth) (FAPE): 1 flights</div>`)[0];
+                popup_f24a28d1495c9f366c3c3f5fcb83eb94.setContent(html_46aa1444dc90863b09a81f361e4bfbe6);
+            
+        
+
+        circle_marker_75936f12451327992240e78b8a5c5e9c.bindPopup(popup_f24a28d1495c9f366c3c3f5fcb83eb94)
+        ;
+
+        
+    
+    
+            var circle_marker_4b696d89a510bcd6c1b55df34e56354d = L.circleMarker(
+                [38.7813, -9.13592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_151d3d2ccf3b421b03b117567e89b53e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_100996a02b312b49ae684c64555ef556 = $(`<div id="html_100996a02b312b49ae684c64555ef556" style="width: 100.0%; height: 100.0%;">Lisbon (LPPT): 1 flights</div>`)[0];
+                popup_151d3d2ccf3b421b03b117567e89b53e.setContent(html_100996a02b312b49ae684c64555ef556);
+            
+        
+
+        circle_marker_4b696d89a510bcd6c1b55df34e56354d.bindPopup(popup_151d3d2ccf3b421b03b117567e89b53e)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd621b1276e1d24753fa9e530a48842 = L.circleMarker(
+                [35.339699, 25.1803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_805b90eae2e5f94f5ecb642191884f65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd14660801973f530d4eb13b5135553c = $(`<div id="html_cd14660801973f530d4eb13b5135553c" style="width: 100.0%; height: 100.0%;">Heraklion (LGIR): 1 flights</div>`)[0];
+                popup_805b90eae2e5f94f5ecb642191884f65.setContent(html_cd14660801973f530d4eb13b5135553c);
+            
+        
+
+        circle_marker_fcd621b1276e1d24753fa9e530a48842.bindPopup(popup_805b90eae2e5f94f5ecb642191884f65)
+        ;
+
+        
+    
+    
+            var circle_marker_3b81d4c74184b59417543ed4430c69f6 = L.circleMarker(
+                [63.985001, -22.6056],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_d12f48944c6f41a4022515fb2a36b52f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1413c1bb8227a0f1196dabca4a6740bb = $(`<div id="html_1413c1bb8227a0f1196dabca4a6740bb" style="width: 100.0%; height: 100.0%;">Reykjavík (BIKF): 1 flights</div>`)[0];
+                popup_d12f48944c6f41a4022515fb2a36b52f.setContent(html_1413c1bb8227a0f1196dabca4a6740bb);
+            
+        
+
+        circle_marker_3b81d4c74184b59417543ed4430c69f6.bindPopup(popup_d12f48944c6f41a4022515fb2a36b52f)
+        ;
+
+        
+    
+    
+            var circle_marker_53dc5a50a703d33e0df947589a7aa579 = L.circleMarker(
+                [41.804532, 12.251998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_9c7604374abd2ebad00a544dbba6e162 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8f2a5c432e5add5d72069f9efc10240 = $(`<div id="html_d8f2a5c432e5add5d72069f9efc10240" style="width: 100.0%; height: 100.0%;">Rome (LIRF): 1 flights</div>`)[0];
+                popup_9c7604374abd2ebad00a544dbba6e162.setContent(html_d8f2a5c432e5add5d72069f9efc10240);
+            
+        
+
+        circle_marker_53dc5a50a703d33e0df947589a7aa579.bindPopup(popup_9c7604374abd2ebad00a544dbba6e162)
+        ;
+
+        
+    
+    
+            var circle_marker_633ad4b19e06c6ab1b8727143815fc6f = L.circleMarker(
+                [5.605189800262451, -0.1667860001325607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_28e9530f3c9255bfac8e630c7c0b0f37);
+        
+    
+        var popup_60616664231c2254f24024f253abc513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8af70e412e88168ab066f2a5969c3a = $(`<div id="html_ed8af70e412e88168ab066f2a5969c3a" style="width: 100.0%; height: 100.0%;">Accra (DGAA): 1 flights</div>`)[0];
+                popup_60616664231c2254f24024f253abc513.setContent(html_ed8af70e412e88168ab066f2a5969c3a);
+            
+        
+
+        circle_marker_633ad4b19e06c6ab1b8727143815fc6f.bindPopup(popup_60616664231c2254f24024f253abc513)
+        ;
+
+        
+    
+</script>
+</html>
